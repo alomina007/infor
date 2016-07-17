@@ -23,7 +23,7 @@ def welcome(m):
     markup.add(b)
     nn = types.InlineKeyboardButton("Inline Mode", switch_inline_query='')
     markup.add(nn)
-    ret_msg = bot.send_message(cid, "Hello I'm ID bot \n\n Send : \n  /id or /me or /info   \n\n\n get your id : \n /idme (just pv) \nsend Your feedback : /feedback [msg]\n\n\n list inline mod : \ntype @INFO_RO_BOT\n\nBot version 1", disable_notification=True, reply_markup=markup)
+    ret_msg = bot.send_message(cid, "Hello I'm INFOROBOT \n\n Send : \n  /id or /me or /info   \n\n\n get your id : \n /idme (just pv) \nsend Your feedback : /feedback [msg]\n\n\n list inline mod : \ntype @INFO_RO_BOT\n\nBot version 1", disable_notification=True, reply_markup=markup)
     assert ret_msg.message_id
 
 @bot.message_handler(commands=['id', 'ids', 'info', 'me'])
@@ -115,10 +115,6 @@ def query_text(query):
                                           types.InputTextMessageContent('*Username : @{}\nYour First Name : {}\nYour Last Name : {}\nYour ID :  {}*'.format(user,name,lname,uid), parse_mode="Markdown"),
                                           reply_markup=markup,
                                           thumb_url=thumb_url)
-    #pic = types.InlineQueryResultPhoto('2',
-                                       #'http://vip.opload.ir/vipdl/95/3/negative23/photo-2016-06-09-01-09-41.jpg',
-                                       #'http://vip.opload.ir/vipdl/95/3/negative23/photo-2016-06-09-01-09-41.jpg',
-                                       #input_message_content=types.InputTextMessageContent('@Taylor_Team')
     #gif = types.InlineQueryResultGif('2',
                                     # 'http://andrewtrimmer.com/wp-content/uploads/2014/09/Coming-Soon_Light-Bulbs_Cropped-Animation-Set_03c.gif',
                                      #'http://andrewtrimmer.com/wp-content/uploads/2014/09/Coming-Soon_Light-Bulbs_Cropped-Animation-Set_03c.gif',
