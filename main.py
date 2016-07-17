@@ -16,14 +16,14 @@ bot = telebot.TeleBot(config.token)
 def welcome(m):
     cid = m.chat.id
     markup = types.InlineKeyboardMarkup()
-    a = types.InlineKeyboardButton("Taylor Team \xE2\x9C\x8C", url="https://telegram.me/taylor_team")
+    a = types.InlineKeyboardButton("powercel \xE2\x9C\x8C", url="https://telegram.me/powercelteam")
     c = types.InlineKeyboardButton("Add group \xE2\x9C\x8C", url="https://telegram.me/ID_bot_robot?startgroup=test")
     markup.add(a, c)
-    b = types.InlineKeyboardButton("Developer ID bot \xE2\x9C\x8C", url="https://telegram.me/negative_officiall")
+    b = types.InlineKeyboardButton("Developer \xE2\x9C\x8C", url="https://telegram.me/XxattackerxX")
     markup.add(b)
     nn = types.InlineKeyboardButton("Inline Mode", switch_inline_query='')
     markup.add(nn)
-    ret_msg = bot.send_message(cid, "Hello I'm ID bot \n\n Send : \n  /id or /me or /info   \n\n\n get your id : \n /idme (just pv) \nsend Your feedback : /feedback [msg]\n\n\n list inline mod : \ntype @ID_bot_robot\n\nBot version 3", disable_notification=True, reply_markup=markup)
+    ret_msg = bot.send_message(cid, "Hello I'm ID bot \n\n Send : \n  /id or /me or /info   \n\n\n get your id : \n /idme (just pv) \nsend Your feedback : /feedback [msg]\n\n\n list inline mod : \ntype @INFO_RO_BOT\n\nBot version 1", disable_notification=True, reply_markup=markup)
     assert ret_msg.message_id
 
 @bot.message_handler(commands=['id', 'ids', 'info', 'me'])
@@ -48,41 +48,24 @@ def id(m):      # info menu
 def c(m):
     uid = m.chat.id
     bot.send_chat_action(uid, 'typing')
-    bot.send_contact(uid, phone_number="+98 937 909 7344", first_name="Negative")
+    bot.send_contact(uid, phone_number="...", first_name="Negative")
 
 
 @bot.message_handler(commands=['about']) # copy right Taylor Team
 def p(m):
     uid = m.chat.id
     markup = types.InlineKeyboardMarkup()
-    v = types.InlineKeyboardButton('\xF0\x9F\x91\x87 \xF0\x9F\x91\xA5 Thanks to \xF0\x9F\x91\xA5 \xF0\x9F\x91\x87', callback_data='Team')
-    a = types.InlineKeyboardButton('Negative', url='https://telegram.me/negative_officiall')
-    b = types.InlineKeyboardButton('Parham', url='https://telegram.me/UnFriendlly')
-    c = types.InlineKeyboardButton('Arsalan', url='https://telegram.me/mute_all')
-    n = types.InlineKeyboardButton('Amircc_CreeD', url='https://telegram.me/Amircc_CreeD')
-    m = types.InlineKeyboardButton('sorblack', url='https://telegram.me/sorblack')
-    k = types.InlineKeyboardButton('MrJacki', url='https://telegram.me/MrJacki')
-    j = types.InlineKeyboardButton('allwen', url='https://telegram.me/allwen')
-    o = types.InlineKeyboardButton('Randall', url='https://telegram.me/Xx_Randall_Xx')
-    p = types.InlineKeyboardButton('NeonGame', url='https://telegram.me/pokr_face')
-    y = types.InlineKeyboardButton('\xF0\x9F\x92\x8E End \xF0\x9F\x92\x8E', callback_data='Team')
-    ch = types.InlineKeyboardButton('Channel', url='https://telegram.me/idbot_channel')
-    git = types.InlineKeyboardButton('Github', url='https://github.com/taylor-team')
-    markup.add(v)
-    markup.add(a, j)
-    markup.add(b, c)
-    markup.add(n, m)
-    markup.add(k, o, p)
-    markup.add(y)
-    markup.add(ch, git)
+    v = types.InlineKeyboardButton('\xF0\x9F\x91\x87 \xF0\x9F\x91\xA5 Thanks to \xF0\x9F\x91\xA5 \xF0\x9F\x91\x87', callback_data='attacker')
+    a = types.InlineKeyboardButton('XxattackerxX', url='https://telegram.me/XxattackerxX')
+    markup.add(a)
     bot.send_chat_action(uid, 'typing')
-    bot.send_message(uid, "Taylor Team development Telegram bot and web mastering \n\n developers : \n [negative](https://telegram.me/negative_officiall) \n [Parham](https://telegram.me/UnFriendlly)", parse_mode="Markdown")
-    bot.send_photo(uid, open('taylor.jpg'), caption="@Taylor_Team", reply_markup=markup)
+    bot.send_message(uid, "Powercel\n\n developers : \n [XxattackerxX](https://telegram.me/negative_officiall) \n [Parham](https://telegram.me/XxattackerxX)", parse_mode="Markdown")
+    bot.send_photo(uid, open('taylor.jpg'), caption="@powercel", reply_markup=markup)
 
 @bot.message_handler(commands=['idbot'])
 def handler(m):
     cid = m.chat.id
-    bot.send_message(cid, "My Name is ID bot \n creator and developer : [negative](https://telegram.me/negative_officiall) \n development channel : [Taylor Team](https://telegram.me/taylor_team)\n\n [github](https://github.com/taylor-team/id-bot)", parse_mode="Markdown")
+    bot.send_message(cid, "My Name is ID bot \n creator and developer : [negative](https://telegram.me/negative_officiall) \n development channel : [powercel](https://telegram.me/powercelteam)", parse_mode="Markdown")
     bot.send_chat_action(cid, "upload_photo")
     bot.send_photo(cid, open('slackbot-story1-582x436.jpg'), caption="@ID_bot_robot  \xF0\x9F\x98\x9C")
 
